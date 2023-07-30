@@ -148,14 +148,14 @@
                     bridge.game.on('visibility_state_changed', state => sendMessageToUnity('OnVisibilityStateChanged', state))
 
                     let unityLoader = document.createElement('script')
-                    unityLoader.src = 'Build/1.1.loader.js'
+                    unityLoader.src = 'Build/1.2.loader.js'
                     unityLoader.onload = () => {
                         createUnityInstance(
                             canvas,
                             {
-                                dataUrl: 'Build/1.1.data.unityweb',
-                                frameworkUrl: 'Build/1.1.framework.js.unityweb',
-                                codeUrl: 'Build/1.1.wasm.unityweb',
+                                dataUrl: 'Build/1.2.data.unityweb',
+                                frameworkUrl: 'Build/1.2.framework.js.unityweb',
+                                codeUrl: 'Build/1.2.wasm.unityweb',
                                 streamingAssetsUrl: 'StreamingAssets',
                                 companyName: 'Mason Interactive',
                                 productName: 'DestructionSimulator',
